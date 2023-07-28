@@ -1,0 +1,217 @@
+.parent {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+.circle {
+  position: absolute;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.child1 {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1/1;
+  top: 0%;
+  right: 0%;
+  background: #f4f4f4;
+}
+
+.child2 {
+  position: absolute;
+  width: 85.4%;
+  aspect-ratio: 1/1;
+  top: 2.13812%;
+  right: 2.13812%;
+  background: #eee;
+}
+.child3 {
+  position: absolute;
+  width: 68.14%;
+  aspect-ratio: 1/1;
+  top: 4.66579%;
+  right: 4.66579%;
+  background: #e1e1e1;
+}
+.child4 {
+  position: absolute;
+  width: 42%;
+  aspect-ratio: 1/1;
+  top: 8.4939%;
+  right: 8.4939%;
+  background: #f4f4f4;
+}
+
+.normal-point {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  transform: translate(50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+  transition-property: visibility, opacity;
+}
+.normal-point::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #000;
+}
+.normal-point::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font: 600 16px/1.2 Inter;
+  letter-spacing: -0.01em;
+  color: #000;
+  white-space: nowrap;
+  transition: 0.4s ease-in-out;
+}
+.child2:hover .hover-point,
+.child3:hover .hover-point,
+.child4:hover .hover-point {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+}
+.main-point {
+  width: 12px;
+  height: 12px;
+}
+.main-point::after {
+  transform: translateY(-100%);
+  top: -18px;
+}
+.main-point::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.08);
+  background: #1b76ff;
+}
+@media screen and (max-width: 768px) {
+  .normal-point:after {
+    font-size: 11px;
+    left: 8px;
+    top: 50%;
+  }
+
+  .main-point {
+    width: 6px;
+    height: 6px;
+  }
+}
+.c2p1 {
+  top: 93.3013%;
+  right: 25%;
+}
+.c2p2 {
+  top: 85.3553%;
+  right: 85.3553%;
+}
+.c2p3 {
+  top: 54.3578%;
+  right: 99.8097%;
+}
+.c2p4 {
+  top: 25%;
+  right: 93.3013%;
+}
+
+.c3p1 {
+  top: 88.3022%;
+  right: 17.8606%;
+}
+.c3p2 {
+  top: 99.8097%;
+  right: 45.6422%;
+}
+.c3p3 {
+  top: 85.3553%;
+  right: 85.3553%;
+}
+.c3p4 {
+  top: 54.3578%;
+  right: 99.8097%;
+}
+.c3p5 {
+  top: 32.899%;
+  right: 96.9846%;
+}
+
+.c4p1 {
+  top: 82.1394%;
+  right: 11.6978%;
+}
+.c4p2 {
+  top: 14.6447%;
+  right: 14.6447%;
+}
+.c4p3 {
+  top: 95.3154%;
+  right: 71.1309%;
+}
+.c4p4 {
+  top: 50%;
+  right: 100%;
+}
+
+.circle .main-point {
+  opacity: 1;
+  visibility: visible;
+}
+.circle .main-point::before {
+  animation: about-circle_pulse2__tR1SD 2s ease infinite;
+}
+
+.item {
+  transition: 0.4s ease-in-out;
+  transition-property: border, opacity;
+}
+.item:not(:first-child):hover {
+  border-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.item:not(:first-child):hover ~ .item {
+  opacity: 0.6;
+}
+
+.item:not(:first-child):hover ~ .item:nth-child(4) {
+  opacity: 0.3;
+}
+.item:first-child {
+  background: #f4f4f4;
+}
+
+.item:nth-child(2) {
+  background: #eee;
+}
+
+.item:nth-child(3) {
+  background: #e1e1e1;
+}
+
+.item:nth-child(4) {
+  background: #f4f4f4;
+}
+@keyframes about-circle_pulse2__tR1SD {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px transparent;
+  }
+
+  71%,
+  to {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}

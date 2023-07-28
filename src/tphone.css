@@ -1,0 +1,235 @@
+.development_dev_phones__dI9l6 {
+  position: absolute;
+  left: 50%;
+  top: 235px;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 687px;
+  z-index: 20;
+}
+
+.development_dev_phones__dI9l6 img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+}
+.development_dev_phones_left__xr3o6 {
+  max-height: 80% !important;
+  left: 0;
+  top: 0;
+  right: auto !important;
+  animation: development_float__UCD_H 6s ease-in-out -3s infinite;
+}
+
+.development_dev_phones_right__RW4lx {
+  max-height: 90% !important;
+  left: auto !important;
+  top: auto !important;
+  right: 0;
+  bottom: 0;
+  animation: development_float__UCD_H 6s ease-in-out infinite;
+}
+
+.screens-p {
+  padding-bottom: 115px;
+}
+
+.litem {
+  margin: 12.8px;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 44px;
+}
+.screen-c {
+  position: relative;
+  width: 365px;
+  height: 770px;
+  border-radius: inherit;
+}
+
+.hand-w {
+  position: absolute;
+  height: calc(100% + 30px);
+  left: 0;
+  top: -30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.hand {
+  margin: auto auto 0;
+  position: sticky;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 940px;
+  overflow: hidden;
+  bottom: 0;
+  will-change: transform;
+  translate: none;
+  rotate: none;
+  scale: none;
+  pointer-events: none;
+}
+.hand-i {
+  flex-shrink: 0;
+  min-width: 1870px !important;
+  width: 1870px !important;
+  height: auto !important;
+  position: relative !important;
+  object-fit: cover;
+  object-position: center top;
+}
+.vid-hand {
+  position: absolute;
+  z-index: 200;
+  width: 348px;
+  height: 741px;
+  top: 56px;
+  border-radius: 42px;
+}
+.vid-hand video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+@keyframes development_float__UCD_H {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-height: 780px) {
+  .screens-p {
+    padding-bottom: 40px;
+  }
+  .hand {
+    height: 740px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .vid-hand {
+    width: 297px;
+    height: 630px;
+    top: 48px;
+    border-radius: 35px;
+  }
+  .hand-i {
+    width: 1589.5px !important;
+    min-width: 1589.5px !important;
+  }
+  .hand {
+    height: 740px;
+  }
+  .screen-c {
+    width: 310.25px;
+    height: 654.5px;
+  }
+  .litem {
+    border-radius: 46.75px;
+  }
+  .development_dev_phones__dI9l6 {
+    top: 190px;
+    width: 546px;
+    height: 625.17px;
+  }
+  .screens-p {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1124px) {
+  .vid-hand {
+    width: 193px;
+    height: 405px;
+    top: 31px;
+    border-radius: 22px;
+  }
+  .hand {
+    height: 500px;
+  }
+  .hand-i {
+    width: 1028.5px !important;
+    min-width: 1028.5px !important;
+  }
+  .litem {
+    border-radius: 30.25px;
+  }
+  .screen-c {
+    width: 200.75px;
+    height: 423.5px;
+  }
+  .hand-w {
+    top: -15px;
+    width: 100%;
+    height: calc(100% + 15px);
+  }
+}
+@media screen and (max-width: 991px) {
+  .development_dev_phones__dI9l6 {
+    top: 160px;
+    width: 420px;
+    height: 480.9px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .vid-hand {
+    width: 145px;
+    height: 305px;
+    top: 23px;
+    border-radius: 18px;
+  }
+  .hand {
+    height: 380px;
+  }
+  .hand-i {
+    width: 770px !important;
+    min-width: 770px !important;
+  }
+  .development_dev_phones__dI9l6 {
+    width: 349.8px;
+    height: 400.521px;
+    top: 254px;
+  }
+  .litem {
+    margin: 8px;
+    border-radius: 20px;
+  }
+  .screen-c {
+    width: 150px;
+    height: 310px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .development_dev_phones__dI9l6 {
+    width: 300px;
+    height: 343.5px;
+    top: 200px;
+  }
+}
+@media screen and (max-width: 465px) {
+  .hand {
+    height: 450px;
+  }
+  .screens-p {
+    padding-bottom: 110px;
+  }
+}
+.screen-i {
+  border-radius: inherit !important;
+  position: relative !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
